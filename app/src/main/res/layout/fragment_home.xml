@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/data_home"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:padding="16dp" />-->
+    <LinearLayout
+        android:id="@+id/linearLocation"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/travel01"
+            android:background="@drawable/rounded_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn địa điểm"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearHotel"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/travel01"
+            android:background="@drawable/rounded_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn khách sạn"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearRes"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:src="@drawable/travel01"
+            android:background="@drawable/rounded_border"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn nhà hàng"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>
