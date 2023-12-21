@@ -12,8 +12,8 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string name="location">Location</string>
-    <string name="restaurant">Restaurant</string>
-    <string name="hotel">Hotel</string>
-    <string name="logout">Logout</string>
+    <string name="location">Điểm du lịch</string>
+    <string name="restaurant">Quán ăn</string>
+    <string name="hotel">Phòng trọ</string>
+    <string name="logout">Đăng xuất</string>
 </resources>
