@@ -109,7 +109,7 @@ public class AddHotel extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<Hotel.Data> call, Response<Hotel.Data> response) {
                     if ( response.body() != null) {
-                        Toast.makeText(AddHotel.this, "Thêm khách sạn thành công", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddHotel.this, "Thêm phòng trọ thành công", Toast.LENGTH_LONG).show();
                         closeActivity();
                     } else {
                         Toast.makeText(AddHotel.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();

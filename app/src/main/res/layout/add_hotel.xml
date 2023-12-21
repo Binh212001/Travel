@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thêm điểm khách sạn "
+                android:text="Thêm điểm Phòng trọ "
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
-                android:text="Tên khách sạn"
+                android:text="Tên ơhongf trọ"
                 />
 
             <EditText
