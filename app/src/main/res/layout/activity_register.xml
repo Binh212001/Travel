@@ -15,79 +15,87 @@
             android:layout_marginTop="70dp"
             android:layout_gravity="center_horizontal"
             android:textStyle="bold"
-            android:text="REGISTER"/>
+            android:text="Đăng ký"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="First name"/>
+            android:text="Họ"/>
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="first name"/>
+            android:hint="Họ"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Last name"/>
+            android:text="Tên"/>
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="last name"/>
+            android:hint="Tên"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Phone number"/>
+            android:text="Số điện thoại"/>
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/phoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="phone number"/>
+            android:hint="Số điện thoại"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Username"/>
+            android:text="Tài khoản"/>
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="username"/>
+            android:hint="Tài khoản"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Password"/>
+            android:text="Mật khẩu"/>
         <EditText
+            android:textColor="@color/white"
+
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="password"/>
+            android:hint="Mật khẩu"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Confirm password"/>
+            android:text="Nhập lại mật khẩu"/>
         <EditText
+            android:textColor="@color/white"
+
             android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:background="@drawable/circle_btn"
-            android:hint="confirm password"/>
+            android:hint="Nhập lại mật khẩu"/>
 
         <Button
             android:id="@+id/signUp"
@@ -97,6 +105,6 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:text="Sign Up"/>
+            android:text="Đăng ký"/>
     </LinearLayout>
 </LinearLayout>
