@@ -119,7 +119,7 @@ public class AddHotel extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<Hotel.Data> call, Throwable t) {
                     // Handle failure
-                    Toast.makeText(AddHotel.this, "Vui lòng điền đầy dủ thông tin shfgdhs", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddHotel.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();
 
                 }
             });

@@ -127,7 +127,7 @@ public class AddDestination extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<Destination.Data> call, Throwable t) {
                     // Handle failure
-                    Toast.makeText(AddDestination.this, "Vui lòng điền đầy dủ thông tin shfgdhs", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddDestination.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();
 
                 }
             });

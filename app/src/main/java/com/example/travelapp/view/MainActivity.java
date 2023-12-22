@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setNavigattionBar();
 
         // đổi màu cho các icon mỗi khi click vào
-        btn_hotel.setColorFilter(R.color.deep_sky_blue);
-        btn_restaurant.setColorFilter(R.color.deep_sky_blue);
+        btn_hotel.setColorFilter(R.color.white);
+        btn_restaurant.setColorFilter(R.color.white);
         btn_location.setColorFilter(R.color.white);
 //        btn_hotel.setColorFilter(ContextCompat.getColor(this, android.R.color.deep_sky_blue),
 //                PorterDuff.Mode.MULTIPLY);
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void setClickColor( View v) {
         if ( v == btn_location) {
-            btn_hotel.setColorFilter(R.color.deep_sky_blue);
+            btn_hotel.setColorFilter(R.color.white);
             btn_restaurant.setColorFilter(R.color.deep_sky_blue);
             btn_location.setColorFilter(R.color.white);
         } else if ( v == btn_hotel) {

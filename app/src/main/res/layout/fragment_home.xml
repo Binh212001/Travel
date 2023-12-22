@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@color/medium_blue">
+    android:background="@color/dark_blue">
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
     <!--        android:id="@+id/data_home"-->

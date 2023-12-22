@@ -100,7 +100,7 @@ public class AddRst extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<Restaurant.Data> call, Throwable t) {
                     // Handle failure
-                    Toast.makeText(AddRst.this, "Vui lòng điền đầy dủ thông tin shfgdhs", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddRst.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();
 
                 }
             });
