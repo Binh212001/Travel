@@ -13,11 +13,14 @@ public  class HotelViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView imageView;
 
+
         public HotelViewHolder(View itemView) {
             super(itemView);
             txtHotelAddress = itemView.findViewById(R.id.txtHotelAddress);
             textHotelName = itemView.findViewById(R.id.txtHotelName);
             imageView = itemView.findViewById(R.id.bg_image_hotel);
             txtHotelPrice = itemView.findViewById(R.id.txtHotelPrice);
+
+
         }
     }

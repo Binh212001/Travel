@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg_splash">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,8 +13,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="100dp"
             android:src="@drawable/logo" />
@@ -21,35 +22,45 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amita"
+            android:text="Đăng  nhập"
+            android:textColor="@color/white"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:text="Đăng  nhập"/>
+
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="4"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
+            android:textColor="@color/white"
             android:text="Tài khoản"/>
         <EditText
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/txtUsername"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/circle_btn"
+            android:background="@drawable/circle_btn_white"
             android:hint="Tài khoản"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Mật khẩu"/>
+            android:text="Mật khẩu"
+            android:textColor="@color/white"/>
         <EditText
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/txtPass"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/circle_btn"
+            android:background="@drawable/circle_btn_white"
             android:inputType="textPassword"
             android:hint="Mật khẩu"/>
 
@@ -63,23 +74,26 @@
                 android:id="@+id/t"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quên mật khẩu"/>
+                android:text="Quên mật khẩu"
+                android:textColor="@color/white"/>
             <TextView
                 android:id="@+id/signUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Đăng ký"
-                android:layout_alignParentRight="true"/>
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"/>
 
         </RelativeLayout>
 
         <Button
-            android:layout_width="150dp"
+            android:id="@+id/signIn"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Đăng nhập"
-            android:id="@+id/signIn"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/orange"
+            android:text="Đăng nhập" />
 
     </LinearLayout>
 </LinearLayout>

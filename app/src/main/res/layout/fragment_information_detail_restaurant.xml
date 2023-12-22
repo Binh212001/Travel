@@ -22,12 +22,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Giờ mở cửa"/>
+                android:text="Giờ mở cửa"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hôm nay mở cửa cả ngày"/>
+            android:text="Hôm nay mở cửa cả ngày"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -49,12 +53,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ở đây có món gì"/>
+                android:text="Ở đây có món gì"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Món Âu"/>
+            android:text="Món Âu"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -76,12 +84,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Món ăn đặc sắc"/>
+                android:text="Món ăn đặc sắc"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bò tái"/>
+            android:text="Bò tái"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -103,12 +115,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Giới thiệu"/>
+                android:text="Giới thiệu"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="discription"/>
+            android:text="discription"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

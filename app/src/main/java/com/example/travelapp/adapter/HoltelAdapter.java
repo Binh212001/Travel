@@ -53,8 +53,9 @@ public class HoltelAdapter extends RecyclerView.Adapter<HotelViewHolder> {
                 }
             }
         });
-
     }
+
+
 
     @Override
     public int getItemCount() {
