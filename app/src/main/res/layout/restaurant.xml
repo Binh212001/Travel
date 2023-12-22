@@ -248,6 +248,36 @@
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
                 android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="3dp"
+                android:textAlignment="center"
+                android:text="Ảnh"
+                android:background="@drawable/boder_top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_rst_02"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_restaurant"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
