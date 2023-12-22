@@ -22,7 +22,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thực đơn"/>
+                android:text="Thực đơn"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <!-- sd group img       -->
@@ -46,17 +48,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đặt bàn"/>
+                android:text="Đặt bàn"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Để lại thông tin liên hệ:"/>
+            android:text="Để lại thông tin liên hệ:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Họ và tên:"/>
+            android:text="Họ và tên:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -64,7 +72,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Số điện thoại:"/>
+            android:text="Số điện thoại:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -72,7 +82,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lượng khách:"/>
+            android:text="Lượng khách:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -81,6 +93,7 @@
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginLeft="260dp"
+            android:backgroundTint="@color/orange"
             android:text="Gửi đi"/>
     </LinearLayout>
 

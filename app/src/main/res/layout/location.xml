@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -32,7 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name location"
-            android:textSize="25dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
 
         <TextView
             android:id="@+id/locationDetailAddress"
@@ -40,7 +44,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Location"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -51,6 +57,7 @@
                 android:text="1.000.000d/ngày"
                 android:textColor="@color/orange_red"
                 android:textSize="15sp"
+                android:fontFamily="serif"
                 android:layout_alignParentLeft="true"/>
             <LinearLayout
                 android:id="@+id/btn_booking"
@@ -60,7 +67,7 @@
                 android:gravity="center_vertical"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/circle_btn">
+                android:background="@drawable/circle_btn_white">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +87,7 @@
                 android:padding="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_toStartOf="@id/btn_booking"
-                android:background="@drawable/circle_btn">
+                android:background="@drawable/circle_btn_white">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,13 +107,12 @@
             android:layout_weight="1"
             android:textColor="@color/black"
             android:textSize="15sp"
+            android:fontFamily="serif"
             android:text="Thời lượng tham quan ước tính"/>
 
     </LinearLayout>
 
-
-
-<!--    phần sd fragment-->
+    <!--    phần sd fragment-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -227,21 +233,28 @@
         </LinearLayout>
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-        <TextView
-        android:id="@+id/locationDetailDescription"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/locationDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
 
-    </LinearLayout>
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginRight="20dp" />-->
+        </LinearLayout>
+    </ScrollView>
+    <!--    <FrameLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginRight="20dp" />-->
 
 </LinearLayout>

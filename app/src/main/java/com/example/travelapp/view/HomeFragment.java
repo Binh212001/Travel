@@ -45,44 +45,64 @@ public class HomeFragment extends Fragment {
         linearHotel = view.findViewById(R.id.linearHotel);
         linearRes = view.findViewById(R.id.linearRes);
 
+//        linearLocation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
+//                fragmentTransaction.remove(getParentFragment());
+//                fragmentTransaction.add(R.id.content_frame, new LocationFragment());
+//                fragmentTransaction.addToBackStack(null).commit();
+//            }
+//        });
+//
+//        linearHotel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
+//                fragmentTransaction.remove(getParentFragment());
+//                fragmentTransaction.add(R.id.content_frame, new HotelFragment());
+//                fragmentTransaction.addToBackStack(null).commit();
+//            }
+//        });
+//        linearRes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
+//                fragmentTransaction.remove(getParentFragment());
+//                fragmentTransaction.add(R.id.content_frame, new RestaurantFragment());
+//                fragmentTransaction.addToBackStack(null).commit();
+//            }
+//        });
+        setupClickListeners();
+        return view;
+    }
+
+    private void setupClickListeners() {
         linearLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
-                fragmentTransaction.remove(getParentFragment());
-                fragmentTransaction.add(R.id.content_frame, new LocationFragment());
-                fragmentTransaction.addToBackStack(null).commit();
+                replaceFragment(new LocationFragment());
             }
         });
 
         linearHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
-                fragmentTransaction.remove(getParentFragment());
-                fragmentTransaction.add(R.id.content_frame, new HotelFragment());
-                fragmentTransaction.addToBackStack(null).commit();
+                replaceFragment(new HotelFragment());
             }
         });
+
         linearRes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
-                fragmentTransaction.remove(getParentFragment());
-                fragmentTransaction.add(R.id.content_frame, new RestaurantFragment());
-                fragmentTransaction.addToBackStack(null).commit();
+                replaceFragment(new RestaurantFragment());
             }
         });
-
-        return view;
     }
 
-
-
-
-
-
-
-
-
+    private void replaceFragment(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = requireFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, fragment);
+        fragmentTransaction.addToBackStack(null).commit();
+    }
 }

@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -32,8 +31,10 @@
             android:id="@+id/rstDetailName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:text="Name restaurant"
-            android:textSize="25dp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/rstDetailAddress"
@@ -41,7 +42,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="location"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -52,7 +55,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="5dp"
                 android:text="1900.9000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"/>
             <LinearLayout
                 android:id="@+id/btn_booking"
                 android:layout_width="wrap_content"
@@ -61,12 +66,13 @@
                 android:gravity="center_vertical"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/circle_btn">
+                android:background="@drawable/circle_btn_white">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:text="Map"/>
+                    android:text="Map"
+                    android:fontFamily="serif"/>
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
@@ -81,7 +87,7 @@
                 android:padding="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_toStartOf="@id/btn_booking"
-                android:background="@drawable/circle_btn">
+                android:background="@drawable/circle_btn_white">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,12 +106,10 @@
 
 
 
-<!-- phần sd fragment-->
+    <!-- phần sd fragment-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
         <LinearLayout
@@ -123,7 +127,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
-                android:text="Thông tin chung"/>
+                android:text="Thông tin chung"
+                android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -140,6 +145,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
+                android:textSize="13sp"
                 android:text="Thực đơn"/>
         </LinearLayout>
         <LinearLayout
@@ -157,6 +163,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
+                android:textSize="13sp"
                 android:text="Đánh giá"/>
         </LinearLayout>
     </LinearLayout>
@@ -183,7 +190,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
-                android:text="Gọi điện"/>
+                android:text="Gọi điện"
+                android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -200,7 +208,8 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
-                android:text="Chỉ đường"/>
+                android:text="Chỉ đường"
+                android:textSize="13sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -217,18 +226,29 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_marginRight="3dp"
-                android:text="Chia sẻ"/>
+                android:text="Chia sẻ"
+                android:textSize="13sp"/>
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/rstDetailDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/rstDetailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

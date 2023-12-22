@@ -22,7 +22,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hình ảnh"/>
+                android:text="Hình ảnh"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <!-- sd group img       -->
@@ -39,13 +41,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Các địa điểm gần"/>
+            android:text="Các địa điểm gần"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
         <ImageView
             android:layout_width="350dp"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="name địa điểm gần"/>
+            android:text="name địa điểm gần"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
     </LinearLayout>
 </LinearLayout>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/faint_gray"
+    android:background="@color/medium_blue"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:gravity="center_vertical">
             <ImageView
                 android:layout_width="wrap_content"
@@ -24,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Địa điểm cần đến"
+                android:textColor="@color/white"
                 android:layout_marginLeft="3dp"/>
         </LinearLayout>
         <LinearLayout
@@ -31,28 +33,34 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:gravity="center_vertical">
             <Button
                 android:id="@+id/openAddResView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thêm"/>
+                android:backgroundTint="@color/orange"
+                android:text="Thêm"
+                android:layout_marginRight="3dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_filter_list_24"/>
+                android:src="@drawable/ic_filter_list_24"
+                android:layout_marginRight="3dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bộ lọc"
-                android:layout_marginLeft="3dp"/>
+                android:textColor="@color/white"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="2dp"/>
         </LinearLayout>
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:padding="4dp"
         android:id="@+id/data_restaurant"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:padding="16dp"/>
 
 </LinearLayout>

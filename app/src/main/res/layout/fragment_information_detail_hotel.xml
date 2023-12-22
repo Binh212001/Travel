@@ -22,12 +22,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phòng vinpearl"/>
+                android:text="Phòng vinpearl"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="giá từ ...-...."/>
+            android:text="giá từ ...-...."
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -36,7 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Gía trung bình: "
+                android:textColor="@color/black"
                 android:textSize="15sp"
+                android:fontFamily="serif"
                 android:layout_alignParentLeft="true"/>
             <LinearLayout
                 android:id="@+id/btn_booking"
@@ -46,7 +52,7 @@
                 android:gravity="center_vertical"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/circle_btn">
+                android:background="@drawable/circle_btn_white">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,12 +86,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gioi thieu"/>
+                android:text="Gioi thieu"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="discription"/>
+            android:text="discription"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -107,17 +117,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đặt phòng"/>
+                android:text="Đặt phòng"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Để lại thông tin liên hệ:"/>
+            android:text="Để lại thông tin liên hệ:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Họ và tên:"/>
+            android:text="Họ và tên:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -125,7 +141,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Số điện thoại:"/>
+            android:text="Số điện thoại:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -133,7 +151,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lượng khách:"/>
+            android:text="Lượng khách:"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="30dp"/>
@@ -142,6 +162,7 @@
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginLeft="260dp"
+            android:backgroundTint="@color/orange"
             android:text="Gửi đi"/>
     </LinearLayout>
 

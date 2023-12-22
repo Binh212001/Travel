@@ -7,4 +7,8 @@
     <color name="orange_red">#F13B13</color>
     <color name="faint_gray">#F0ECE9</color>
     <color name="item_color">#DDD5CF</color>
+    <color name="dark_blue">#13334C</color>
+    <color name="medium_blue">#005792</color>
+    <color name="orange">#FD5F00</color>
+
 </resources>
