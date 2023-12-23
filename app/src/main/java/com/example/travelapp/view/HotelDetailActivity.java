@@ -105,7 +105,7 @@ public class HotelDetailActivity extends AppCompatActivity  {
                         public void onResponse(Call<Book> call, Response<Book> response) {
                             if ( response.body() != null) {
                                 Toast.makeText(HotelDetailActivity.this, "Dặt phòng thành công", Toast.LENGTH_LONG).show();
-                                closeActivity();
+//                                closeActivity();
                             } else {
                                 Toast.makeText(HotelDetailActivity.this, "Dặt phòng thất bại", Toast.LENGTH_LONG).show();
                             }

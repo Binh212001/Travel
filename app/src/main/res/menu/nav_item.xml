@@ -21,7 +21,7 @@
             android:icon="@drawable/ic_hotel_24"/>
         <item
             android:id="@+id/nav_logout"
-            android:title="@string/logout"
+            android:title="Đăng xuất"
             android:icon="@drawable/ic_logout_24"/>
     </group>
 </menu>

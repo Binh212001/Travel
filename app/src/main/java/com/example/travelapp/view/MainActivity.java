@@ -17,6 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.travelapp.R;
 import com.example.travelapp.adapter.DestinationAdapter;
@@ -65,6 +66,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // bắt sự kiện khi click các item trong navigationBar_menu
         navigation_view.setNavigationItemSelectedListener(this);
+    }
+
+    private void performLogout() {
+        // Thực hiện các bước đăng xuất cần thiết, ví dụ: xóa thông tin đăng nhập từ SharedPreferences, đăng xuất khỏi các dịch vụ, ...
+
+        // Chuyển hướng đến màn hình đăng nhập hoặc màn hình chính
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+
+        // Kết thúc Activity hiện tại để ngăn chặn quay lại màn hình trước đó
+        finish();
     }
 
 
@@ -121,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void setClickColor( View v) {
         if ( v == btn_location) {
-            btn_hotel.setColorFilter(R.color.white);
+            btn_hotel.setColorFilter(R.color.deep_sky_blue);
             btn_restaurant.setColorFilter(R.color.deep_sky_blue);
             btn_location.setColorFilter(R.color.white);
         } else if ( v == btn_hotel) {
@@ -171,6 +183,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 replaceFragment(new HotelFragment());
                 currentFragment = FRAGMENT_HOTEL;
             }
+        } else if (id == R.id.nav_logout) {
+            Toast.makeText(this, "Đăng xuất", Toast.LENGTH_LONG).show();
+            performLogout();
         }
 
         drawer_layout.closeDrawer(GravityCompat.START);

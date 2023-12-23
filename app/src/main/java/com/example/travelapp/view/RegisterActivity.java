@@ -31,6 +31,7 @@ public class RegisterActivity extends AppCompatActivity  {
 
         init();
 
+
     }
 
     public  void  init(){
@@ -41,6 +42,7 @@ public class RegisterActivity extends AppCompatActivity  {
         confirmPassword = findViewById(R.id.confirmPassword);
         phoneNumber = findViewById(R.id.phoneNumber);
         signUp = findViewById(R.id.signUp);
+
 
         register();
 
@@ -59,6 +61,12 @@ public class RegisterActivity extends AppCompatActivity  {
 
                 validate(txtUsername , txtPass,txtFirstName,txtLastName , phone, txtConfirmPass);
                 saveData(txtUsername , txtPass,txtFirstName,txtLastName , phone);
+
+                boolean success =  validate(txtUsername , txtPass,txtFirstName,txtLastName , phone, txtConfirmPass);
+
+                if (success == true){
+                    saveData(txtUsername , txtPass,txtFirstName,txtLastName , phone);
+                }
 
             }
         });
@@ -92,12 +100,15 @@ public class RegisterActivity extends AppCompatActivity  {
 
     }
 
-    public  void validate(String txtUsername ,String txtPass,String txtFirstName,String txtLastName ,String phone,String txtConfirmPass){
-            if(txtUsername.isEmpty()==true || txtPass.isEmpty()==true||txtFirstName.isEmpty()==true||txtLastName.isEmpty()==true || phone.isEmpty()==true|| txtConfirmPass.isEmpty()==true){
-                Toast.makeText(RegisterActivity.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();
-            } else if (txtPass.equals(confirmPassword) ==false) {
-                Toast.makeText(RegisterActivity.this, "Mật khẩu và xác nhận mật khẩu không khớp", Toast.LENGTH_LONG).show();
-            }
+    public  boolean validate(String txtUsername ,String txtPass,String txtFirstName,String txtLastName ,String phone,String txtConfirmPass){
+        if(txtUsername.isEmpty()==true || txtPass.isEmpty()==true||txtFirstName.isEmpty()==true||txtLastName.isEmpty()==true || phone.isEmpty()==true|| txtConfirmPass.isEmpty()==true){
+            Toast.makeText(RegisterActivity.this, "Vui lòng điền đầy dủ thông tin", Toast.LENGTH_LONG).show();
+            return  false;
+        } else if (txtPass.equals(confirmPassword) ==false) {
+            Toast.makeText(RegisterActivity.this, "Mật khẩu và xác nhận mật khẩu không khớp", Toast.LENGTH_LONG).show();
+            return  false;
+        }
+        return  true;
     }
 
 
